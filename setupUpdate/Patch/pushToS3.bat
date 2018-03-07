@@ -1,0 +1,1 @@
+aws deploy push --application-name DAUpdate_Deploy --description "This is my deployment" --ignore-hidden-files --s3-location s3://da-code-deploy-bucket/updateSetup.zip --source C:\jenkins-ws\da-remote-install\automatedDeployment\setupUpdate\Patch >C:\jenkins-ws\da-remote-install\ADOutputFiles\setupUpdate\output.txt

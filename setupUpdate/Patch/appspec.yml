@@ -1,0 +1,25 @@
+--- 
+files: 
+  - 
+    destination: "c:\\DAInstallation\\Latest"
+    source: \DocAuthority_windows.exe
+  - 
+    destination: "c:\\DAInstallation\\Latest"
+    source: \DA_silence_Installation.bat
+  - 
+    destination: "c:\\DAInstallation\\Latest"
+    source: \sendDeploymentLogsToS3.ps1
+hooks: 
+  AfterInstall: 
+    - 
+      location: \DA_silence_Installation.bat
+      timeout: 600
+    - 
+      location: \sendDeploymentLogsToS3.ps1
+      timeout: 300
+  BeforeInstall: 
+    - 
+      location: \before-install.bat
+      timeout: 900
+os: windows
+version: 0.0

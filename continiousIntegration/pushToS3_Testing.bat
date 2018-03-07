@@ -1,0 +1,1 @@
+aws deploy push --application-name DAInstallation_Deploy --description "This is my deployment" --ignore-hidden-files --s3-location s3://testingcodedeploybucket/CI.zip --source C:\jenkins-ws\da-remote-install\automatedDeployment >C:\jenkins-ws\da-remote-install\ADOutputFiles\output.txt

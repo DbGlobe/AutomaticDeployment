@@ -1,0 +1,1 @@
+Powershell.exe -executionpolicy remotesigned -File C:\DAInstallation\Latest\execInstallationMode.ps1

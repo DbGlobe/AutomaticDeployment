@@ -1,0 +1,1 @@
+aws deploy delete-deployment-group --application-name DAUpdate_Deploy --deployment-group-name DA_Update_Installation

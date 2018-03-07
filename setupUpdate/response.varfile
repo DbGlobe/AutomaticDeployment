@@ -1,0 +1,50 @@
+# install4j response file for DocAuthority 1.6.0
+filecluster.admin.email=
+filecluster.admin.user=admin
+filecluster.admin.password=123
+filecluster.analysis.single.step$Boolean=true
+filecluster.memory.usage$Integer=7
+filecluster.mysql.host=localhost
+filecluster.mysql.port=3306
+filecluster.mysql.schema=docauthority
+# mysql URL
+filecluster.mysql.url=jdbc\:mysql\://localhost\:3306/docauthority?autoReconnect\=true&useUnicode\=true&createDatabaseIfNotExist\=true&characterEncoding\=utf-8
+# mysql user
+filecluster.mysql.user=root
+filecluster.mysql.schema.reset=False
+# FileCluster Root scanning folder:
+filecluster.scanning.folder=
+filecluster.service.port.ajp$Long=8009
+filecluster.service.port.http$Long=8080
+filecluster.service.port.https$Long=8443
+filecluster.service.port.jmx$Long=7004
+filecluster.service.port.shutdown$Long=8005
+filecluster.service.user=
+filecluster.service.user.use.default$Boolean=true
+fileprocessor.memory.usage$Integer=2
+fileprocessor.separate.process$Boolean=true
+fileprocessor.service.port.http$Long=8280
+fileprocessor.service.port.jmx$Long=7014
+mysql.data.migration.enable$Boolean=false
+mysql.data.migration.executable=C\:\\Program Files\\MySQL\\MySQL Server 5.7\\bin\\mysqld.exe
+mysql.data.migration.service.name=MySQL57
+solr.data.directory=
+solr.data.directory.manual$Boolean=false
+solr.memory.usage$Integer=7
+solr.service.port.http$Long=8983
+solr.service.port.https$Long=8984
+solr.service.port.jmx$Long=7104
+sys.adminRights$Boolean=true
+sys.component.1745$Boolean=true
+sys.component.DocAuthorityFileService$Boolean=true
+sys.component.core$Boolean=true
+sys.component.filecluster$Boolean=true
+sys.component.solr$Boolean=true
+sys.component.ui$Boolean=true
+sys.component.vcredist$Boolean=true
+sys.installationDir=c\:\\DocAuthority
+sys.languageId=en
+sys.programGroupAllUsers$Boolean=true
+sys.programGroupDisabled$Boolean=false
+sys.programGroupName=DocAuthority
+ui.port.http$Long=9000

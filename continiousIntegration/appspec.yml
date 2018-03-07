@@ -1,0 +1,47 @@
+---
+files:
+  -
+    destination: "c:\\Installation\\DAInstallation\\Latest"
+    source: \DA_silence_AIO_Installation.bat
+  -
+    destination: "c:\\Installation\\DAInstallation\\Latest"
+    source: \runSilentInstallation.bat
+  -
+    destination: "c:\\Installation\\DAInstallation\\Latest"
+    source: \responseFiles\response_AIO.varfile
+  -
+    destination: "c:\\Installation\\DAInstallation\\Latest"
+    source: \additionalPS.ps1
+  -
+    destination: "c:\\Installation\\DAInstallation\\Latest"
+    source: \resetScheme.bat
+  -
+    destination: "c:\\Installation\\DAInstallation\\Latest"
+    source: \runCreateCollection.bat
+  -
+    destination: "c:\\Installation\\DAInstallation\\Latest"
+    source: \startFileClusterService.bat
+  -
+    destination: "c:\\Installation\\DAInstallation\\Latest"
+    source: \selectInstanceType_Testing.ps1
+  -
+    destination: "c:\\Installation\\DAInstallation\\Latest"
+    source: \deleteLatest.ps1
+hooks:
+  AfterInstall:
+    -
+      location: \runSilentInstallation.bat
+      timeout: 800
+    -
+      location: \additionalPS.ps1
+      timeout: 800
+  ApplicationStart:
+    -
+      location: \deleteLatest.ps1
+      timeout: 100
+  BeforeInstall:
+    -
+      location: \before-install.bat
+      timeout: 200
+os: windows
+version: 0.0

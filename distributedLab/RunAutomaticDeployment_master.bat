@@ -1,0 +1,1 @@
+Powershell.exe -executionpolicy remotesigned -File  %WORKSPACE%\automatedDeployment\AutomaticDeployment_master.ps1

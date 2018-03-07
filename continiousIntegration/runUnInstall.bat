@@ -1,0 +1,1 @@
+C:\Installation\DocAuthority\uninstall.exe -dir c:\DocAuthority -q  -Vuninstall.force=true

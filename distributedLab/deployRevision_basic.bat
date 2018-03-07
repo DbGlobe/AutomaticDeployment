@@ -1,0 +1,1 @@
+aws deploy create-deployment --application-name DAInstallation_Deploy --s3-location bucket=da-code-deploy-bucket,key=TestInstallation.zip,bundleType=zip,eTag=d6a5439cb5a7d93e824a968f6735791d-45 --deployment-group-name DAInstallation_Deploy --deployment-config-name CodeDeployDefault.AllAtOnce --description DAInstallation_Deploy

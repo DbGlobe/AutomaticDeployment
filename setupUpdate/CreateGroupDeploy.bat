@@ -1,0 +1,1 @@
+aws deploy create-deployment-group --application-name DAUpdate_Deploy --deployment-config-name CodeDeployDefault.OneAtATime --deployment-group-name DA_Update_Installation --ec2-tag-filters Key=Name,Value=codeDeploy,Type=KEY_AND_VALUE --service-role-arn arn:aws:iam::620345901349:role/CodeDeployServiceRole

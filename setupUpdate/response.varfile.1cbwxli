@@ -1,0 +1,23 @@
+# install4j response file for DocAuthority 1.6.0
+filecluster.analysis.single.step$Boolean=true
+filecluster.mysql.host=localhost
+filecluster.mysql.schema=docauthority
+# mysql URL
+filecluster.mysql.url=jdbc\:mysql\://localhost\:3306/cla?autoReconnect\=true&useUnicode\=true&createDatabaseIfNotExist\=true&characterEncoding\=utf-8
+# mysql user
+filecluster.mysql.user=root
+# FileCluster Root scanning folder:
+filecluster.scanning.folder=
+filecluster.service.port.http$Long=8080
+filecluster.service.port.jmx$Long=7004
+solr.data.directory=
+solr.data.directory.manual$Boolean=false
+solr.service.port.http$Long=8983
+solr.service.port.jmx$Long=7104
+sys.adminRights$Boolean=true
+sys.component.DocAuthorityFileService$Boolean=true
+sys.component.filecluster$Boolean=true
+sys.component.solr$Boolean=true
+sys.component.ui$Boolean=true
+sys.installationDir=C\:\\DocAuthority
+sys.languageId=en

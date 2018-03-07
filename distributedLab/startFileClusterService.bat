@@ -1,0 +1,2 @@
+net start DocAuthority-filecluster
+pause

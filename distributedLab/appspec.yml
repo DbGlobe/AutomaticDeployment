@@ -1,0 +1,57 @@
+version: 0.0
+os: windows
+files:
+  - source: \DocAuthority_windows.exe
+    destination: c:\Installation\DAInstallation\Latest
+  - source: \responseFiles\response_MP1.varfile
+    destination:  c:\Installation\DAInstallation\Latest
+  - source: \responseFiles\response_MySQL_Solr1.varfile
+    destination:  c:\Installation\DAInstallation\Latest
+  - source: \responseFiles\response_FC1.varfile
+    destination:  c:\Installation\DAInstallation\Latest
+  - source: \sendDeploymentLogsToS3.ps1
+    destination:  c:\Installation\DAInstallation\Latest
+  - source: \selectInstanceType.ps1
+    destination:  c:\Installation\DAInstallation\Latest
+  - source: \selectInstanceType_Testing.ps1
+    destination:  c:\Installation\DAInstallation\Latest
+  - source: \DA_silence_FC_Installation.bat
+    destination:  c:\Installation\DAInstallation\Latest
+  - source: \DA_silence_AIO_Installation.bat
+    destination:  c:\Installation\DAInstallation\Latest
+  - source: \DA_silence_MP_Installation.bat
+    destination:  c:\Installation\DAInstallation\Latest
+  - source: \runSilentInstallation.bat
+    destination:  c:\Installation\DAInstallation\Latest
+  - source: \DA_silence_MySQL_Solr_Installation.bat
+    destination: c:\Installation\DAInstallation\Latest
+  - source: \responseFiles\response_AIO.varfile
+    destination:  c:\Installation\DAInstallation\Latest
+  - source: \additionalPS.ps1
+    destination:  c:\Installation\DAInstallation\Latest
+  - source: \resetScheme.bat
+    destination:  c:\Installation\DAInstallation\Latest
+  - source: \runCreateCollection.bat
+    destination:  c:\Installation\DAInstallation\Latest
+  - source: \startFileClusterService.bat
+    destination:  c:\Installation\DAInstallation\Latest
+  - source: \responseFiles\response_secondRun_FC1.varfile
+    destination:  c:\Installation\DAInstallation\Latest
+  - source: \DA_silence_FC_Installation_secondRun.bat
+    destination:  c:\Installation\DAInstallation\Latest
+  - source: \AlignShards.bat
+    destination:  c:\Installation\DAInstallation\Latest
+  - source: \doAlignShards.bat
+    destination:  c:\Installation\DAInstallation\Latest
+
+hooks:
+  BeforeInstall:
+    - location: \before-install.bat
+      timeout: 200
+  AfterInstall:
+     - location: \runSilentInstallation.bat
+       timeout: 800
+     - location: \additionalPS.ps1
+       timeout: 800
+     - location: \sendDeploymentLogsToS3.ps1
+       timeout: 300
