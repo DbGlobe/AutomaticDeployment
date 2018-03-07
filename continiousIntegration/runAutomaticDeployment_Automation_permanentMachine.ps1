@@ -21,9 +21,9 @@
     
 )
  
-    aws configure set AWS_ACCESS_KEY_ID AKIAJ64LA7AI557VBVVQ
-aws configure set AWS_SECRET_ACCESS_KEY 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
-aws configure set default.region us-west-2
+    aws configure set AWS_ACCESS_KEY_ID AKIAJQPAZC7D5MO3ASGA
+        aws configure set AWS_SECRET_ACCESS_KEY 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
+        aws configure set default.region us-west-2
 
 
 
@@ -212,8 +212,8 @@ Write-Host " ============ Delete deplyment group: DA_Installation_$buildNumber =
 
 
 # Download Automation WS from S3 
-aws configure set AWS_ACCESS_KEY_ID AKIAJ64LA7AI557VBVVQ
-aws configure set AWS_SECRET_ACCESS_KEY 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
+aws configure set AWS_ACCESS_KEY_ID AKIAJQPAZC7D5MO3ASGA
+aws configure set AWS_SECRET_ACCESS_KEY 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
 aws configure set default.region us-west-2
 
 if ($source_branch -eq "Master")
